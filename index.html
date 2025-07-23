@@ -1,176 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinterra Boutique</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fdfcf9;
-      color: #333;
-    }
-    header {
-      background-color: #0e3d2b;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin: 0;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .hero {
-      text-align: center;
-      padding: 3rem 2rem;
-      background: url('https://images.unsplash.com/photo-1606312619344-ffd59df36c29') center/cover no-repeat;
-      color: white;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section img.banner {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .product {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .product img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-    .product h3 {
-      margin: 0.5rem 0;
-      font-family: 'Playfair Display', serif;
-    }
-    .product p {
-      padding: 0 1rem;
-    }
-    .product button {
-      background-color: #0e3d2b;
-      color: white;
-      border: none;
-      padding: 0.8rem;
-      margin: 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 4px;
-    }
-    .product button:hover {
-      background-color: #145f41;
-    }
-    footer {
-      background-color: #0e3d2b;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 4rem;
-    }
-  </style>
-  <script>
-    function addToCart(productName) {
-      alert(productName + " added to cart. Checkout feature coming soon!");
-    }
-  </script>
+  <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Vinterra Boutique</h1>
+    <div class="logo">Vinterra Boutique</div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#products">Shop</a>
-      <a href="#inspiration">Inspiration</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collection.html">Collection</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Luxury Meets Tradition</h2>
-    <p>Handpicked artisan fashion, oud oils & vintage handcrafted elegance.</p>
-  </section>
-
-  <section class="section" id="about">
-    <img src="https://images.unsplash.com/photo-1607082349566-cdc4850394d0" class="banner" alt="About Vinterra">
-    <h2>About Us</h2>
-    <p>Vinterra Boutique is a luxury house inspired by Middle Eastern heritage and timeless craftsmanship. Our curated offerings include premium oud oils, handcrafted fashion, and artisan lifestyle pieces made for elegance and distinction.</p>
-  </section>
-
-  <section class="section" id="products">
-    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" class="banner" alt="Product Collection">
-    <h2>Our Products</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1613053281857-ecce0b74b0c1" alt="Royal Oud">
-        <h3>Royal Oud</h3>
-        <p>Rich, woody, and long-lasting fragrance.<br><strong>AED 250</strong></p>
-        <button onclick="addToCart('Royal Oud')">Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1626949367896-1b0a2ef15f4e" alt="Mystic Amber">
-        <h3>Mystic Amber</h3>
-        <p>Warm and exotic scent with amber and spices.<br><strong>AED 280</strong></p>
-        <button onclick="addToCart('Mystic Amber')">Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1613553488771-01ee1dd392dc" alt="Velvet Musk">
-        <h3>Velvet Musk</h3>
-        <p>Soft musky oud with floral undertones.<br><strong>AED 220</strong></p>
-        <button onclick="addToCart('Velvet Musk')">Add to Cart</button>
-      </div>
+    <div class="hero-text">
+      <h1>Luxury Meets Artistry</h1>
+      <p>Inspired by timeless elegance and handcrafted heritage.</p>
     </div>
   </section>
 
-  <section class="section" id="inspiration">
-    <img src="https://images.unsplash.com/photo-1606313681831-b6fcde2c3df3" class="banner" alt="Our Aesthetic">
-    <h2>Our Aesthetic</h2>
-    <p>Inspired by vintage luxury and artistic heritage, our vision blends tradition with elegance. Each product is part of our carefully curated universe of beauty, simplicity, and luxury living.</p>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>For orders or collaborations, message us on Instagram <strong>@vinterraboutique</strong> or WhatsApp at +971-XXX-XXXXXX.</p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Vinterra Boutique. All rights reserved.</p>
+    <p>&copy; 2025 Vinterra Boutique</p>
   </footer>
 </body>
 </html>
