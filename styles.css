@@ -71,7 +71,7 @@ header h1 {
     }
     .product button {
       background-color: #0e3d2b;
-      color: white;
+      color: green;
       border: none;
       padding: 0.8rem;
       margin: 1rem;
@@ -84,7 +84,7 @@ header h1 {
     }
     footer {
       background-color: #0e3d2b;
-      color: white;
+      color: green;
       text-align: center;
       padding: 1.5rem;
       margin-top: 4rem;
