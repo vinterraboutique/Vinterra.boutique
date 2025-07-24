@@ -5,28 +5,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinterra Boutique</title>
-  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfcf9;
+      color: #000;
+    }
+    header {
+      background-color: #0e3d2b;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background-color: #0e3d2b;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo">Vinterra Boutique</div>
+    <h1>Vinterra Boutique</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="collection.html">Collection</a>
-      <a href="contact.html">Contact</a>
+      <a href="#about">About</a>
+      <a href="#products">Shop</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Luxury Meets Artistry</h1>
-      <p>Inspired by timeless elegance and handcrafted heritage.</p>
-    </div>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Vinterra Boutique is a luxury lifestyle brand blending artisan craftsmanship, timeless elegance, and heritage-inspired fashion.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <p>Explore our collection of elegant oud, artisan wear, and handmade luxury items.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>We’d love to hear from you!</p>
+    <p><strong>WhatsApp:</strong> +971 544 884 440</p>
+    <p><strong>Email:</strong> <a href="mailto:vinterra.boutique@gmail.com">vinterra.boutique@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/vinterra.boutique" target="_blank">@vinterra.boutique</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Vinterra Boutique</p>
+    <p>&copy; 2025 Vinterra Boutique. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:vinterra.boutique@gmail.com">vinterra.boutique@gmail.com</a> | WhatsApp: +971 544 884 440 | <a href="https://instagram.com/vinterra.boutique" target="_blank">@vinterra.boutique</a></p>
   </footer>
 </body>
 </html>
