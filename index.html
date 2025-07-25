@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vinterra Boutique</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #fdfcf9;
-      color: #000;
+      background-color: #ffffff;
+      color: #000000;
     }
     header {
       background-color: #0e3d2b;
@@ -32,10 +32,61 @@
       text-decoration: none;
       font-weight: 600;
     }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('main-image.jpg') center/cover no-repeat;
+      color: white;
+    }
+    .hero img.logo {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+    }
     .section {
       padding: 3rem 2rem;
       max-width: 1000px;
       margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .product {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product h3 {
+      font-family: 'Playfair Display', serif;
+      margin: 0.5rem 0;
+    }
+    .product p {
+      padding: 0 1rem;
+    }
+    .product button {
+      background-color: #0e3d2b;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      margin: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .product button:hover {
+      background-color: #145f41;
     }
     footer {
       background-color: #0e3d2b;
@@ -43,10 +94,6 @@
       text-align: center;
       padding: 1.5rem;
       margin-top: 4rem;
-    }
-    footer a {
-      color: white;
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -60,27 +107,44 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <img src="logo.png" class="logo" alt="Vinterra Logo" />
+    <h2>Luxury Meets Tradition</h2>
+    <p>Curated artisan fashion, oud oils & handcrafted elegance.</p>
+  </section>
+
   <section class="section" id="about">
     <h2>About Us</h2>
-    <p>Vinterra Boutique is a luxury lifestyle brand blending artisan craftsmanship, timeless elegance, and heritage-inspired fashion.</p>
+    <p>Vinterra Boutique is rooted in Middle Eastern heritage, celebrating timeless craftsmanship and elegant living through fashion, artisan goods, and luxurious fragrances.</p>
   </section>
 
   <section class="section" id="products">
     <h2>Our Products</h2>
-    <p>Explore our collection of elegant oud, artisan wear, and handmade luxury items.</p>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1613053281857-ecce0b74b0c1" alt="Royal Oud" />
+        <h3>Royal Oud</h3>
+        <p>Woody and long-lasting scent.<br><strong>AED 250</strong></p>
+        <button onclick="alert('Royal Oud added to cart!')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1626949367896-1b0a2ef15f4e" alt="Mystic Amber" />
+        <h3>Mystic Amber</h3>
+        <p>Warm amber scent.<br><strong>AED 280</strong></p>
+        <button onclick="alert('Mystic Amber added to cart!')">Add to Cart</button>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>We’d love to hear from you!</p>
-    <p><strong>WhatsApp:</strong> +971 544 884 440</p>
-    <p><strong>Email:</strong> <a href="mailto:vinterra.boutique@gmail.com">vinterra.boutique@gmail.com</a></p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/vinterra.boutique" target="_blank">@vinterra.boutique</a></p>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:vinterra.boutique@gmail.com">vinterra.boutique@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/971544884440" target="_blank">+971544884440</a></p>
+    <p>Instagram: <a href="https://instagram.com/vinterra.boutique" target="_blank">@vinterra.boutique</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Vinterra Boutique. All rights reserved.</p>
-    <p>Contact us: <a href="mailto:vinterra.boutique@gmail.com">vinterra.boutique@gmail.com</a> | WhatsApp: +971 544 884 440 | <a href="https://instagram.com/vinterra.boutique" target="_blank">@vinterra.boutique</a></p>
   </footer>
 </body>
 </html>
